@@ -4,23 +4,23 @@ import { useState } from "react";
 import Image from "next/image";
 
 const Animation = () => {
-  const [showContent, setShowContent] = useState("image"); // This state controls what content to display
+  const [showContent, setShowContent] = useState("image");
 
   const handleVideoEnd = () => {
-    setShowContent("secondImage"); // Change to the second image after the video ends
+    setShowContent("secondImage");
   };
 
   const handleToOffVideoEnd = () => {
-    setShowContent("image"); // Change to the second image after the video ends
+    setShowContent("image");
   };
 
   const handleClick = () => {
     switch (showContent) {
       case "image":
-        setShowContent("video"); // Change to video on click
+        setShowContent("video");
         break;
       case "secondImage":
-        setShowContent("toOffVideo"); // Transition back to the initial image when the second image is clicked
+        setShowContent("toOffVideo");
         break;
     }
   };
@@ -33,7 +33,7 @@ const Animation = () => {
         height: 200,
         position: "relative",
         cursor: "pointer",
-        backgroundColor: "#586745", // Ensure consistent background color
+        backgroundColor: "#586745",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
