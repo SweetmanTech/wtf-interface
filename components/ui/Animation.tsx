@@ -29,8 +29,8 @@ const Animation = () => {
     <div
       onClick={handleClick}
       style={{
-        width: 200,
-        height: 200,
+        width: "80vh",
+        height: "44vw",
         position: "relative",
         cursor: "pointer",
         backgroundColor: "#586745",
