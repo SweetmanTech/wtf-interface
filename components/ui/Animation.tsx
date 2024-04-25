@@ -29,8 +29,8 @@ const Animation = () => {
     <div
       onClick={handleClick}
       style={{
-        width: 200,
-        height: 200,
+        width: "80vh",
+        height: "44vw",
         position: "relative",
         cursor: "pointer",
         backgroundColor: "#586745",
@@ -38,6 +38,7 @@ const Animation = () => {
         alignItems: "center",
         justifyContent: "center",
       }}
+      className="border border-sky-500"
     >
       {showContent === "image" && (
         <Image src="/off.png" alt="logo" layout="fill" objectFit="cover" />
