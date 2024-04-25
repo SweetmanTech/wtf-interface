@@ -38,7 +38,6 @@ const Animation = () => {
         alignItems: "center",
         justifyContent: "center",
       }}
-      className="border border-sky-500"
     >
       {showContent === "image" && (
         <Image src="/off.png" alt="logo" layout="fill" objectFit="cover" />
